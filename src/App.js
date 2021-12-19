@@ -1,4 +1,5 @@
 import './App.css'
+import Matchgame from './components/Matchgame'
 
 // These are the lists used in the application. You can move them to any component needed.
 const tabsList = [
@@ -246,7 +247,21 @@ const imagesList = [
   },
 ]
 
+const initialState = {
+  score: 0,
+  time: 60,
+  activeTab: tabsList[0].tabId,
+  matchUrl: imagesList[0].imageUrl,
+  matchId: imagesList[0].id,
+  gameMode: true,
+}
 // Replace your code here
-const App = () => <div>Hello World</div>
+const App = () => (
+  <Matchgame
+    initialState={initialState}
+    tabsList={tabsList}
+    imagesList={imagesList}
+  />
+)
 
 export default App
