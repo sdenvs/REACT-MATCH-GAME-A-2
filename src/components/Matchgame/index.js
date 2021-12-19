@@ -54,7 +54,7 @@ class Matchgame extends Component {
       this.changeTabFun(details.tabId)
     }
     return (
-      <div className="mr-3">
+      <li className="mr-3">
         <button
           onClick={changeTab}
           className=" bg-transparent font-weight-bold tabButton"
@@ -62,20 +62,23 @@ class Matchgame extends Component {
           {details.displayText}
         </button>
         {activeTab === details.tabId ? <hr className="bg-light" /> : ''}
-      </div>
+      </li>
     )
   }
 
   navbarItem = () => {
     const {score, time} = this.state
     return (
-      <nav className="navbar navbarContainer d-flex align-items-center">
-        <img
-          className="logoImg"
-          src="https://assets.ccbp.in/frontend/react-js/match-game-website-logo.png"
-          alt="website logo"
-        />
-        <div className="score-details d-flex pt-3">
+      <ul className="ulList navbar navbarContainer d-flex align-items-center p-3">
+        <li>
+          <img
+            className="logoImg"
+            src="https://assets.ccbp.in/frontend/react-js/match-game-website-logo.png"
+            alt="website logo"
+          />
+        </li>
+
+        <li className="score-details d-flex pt-3">
           <div>
             <p>
               Score: <span className="text-warning">{score}</span>
@@ -87,10 +90,10 @@ class Matchgame extends Component {
               src="https://assets.ccbp.in/frontend/react-js/match-game-timer-img.png"
               alt="timer"
             />
-            <span className="text-warning">{time} sec</span>
+            <p className="text-warning">{time} sec</p>
           </div>
-        </div>
-      </nav>
+        </li>
+      </ul>
     )
   }
 
@@ -103,7 +106,7 @@ class Matchgame extends Component {
     return (
       <div className="p-4 text-center">
         <img alt="match" className="showImage mb-3" src={matchUrl} />
-        <div className="d-flex justify-content-center flex-wrap">
+        <ul className="ulList d-flex justify-content-center flex-wrap">
           {tabsList.map(eachItem => (
             <this.ShowTabs
               key={eachItem.tabId}
@@ -111,7 +114,7 @@ class Matchgame extends Component {
               activeTab={activeTab}
             />
           ))}
-        </div>
+        </ul>
         <ul className="ulList d-flex flex-wrap justify-content-center">
           {showList.map(eachItem => (
             <this.ShowImageList details={eachItem} key={eachItem.key} />
@@ -141,7 +144,7 @@ class Matchgame extends Component {
             alt="trophy"
             src="https://assets.ccbp.in/frontend/react-js/match-game-trophy.png"
           />
-          <h1>Your Score</h1>
+          <p>Your Score</p>
           <h1>{score}</h1>
           <button onClick={restartGame} className="btn-lg btn-danger">
             <img

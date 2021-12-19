@@ -56,14 +56,16 @@ span {
   height: 600px;
   padding-top: 30px;
 }
-.gameOverMode h1 {
+.gameOverMode h1,
+p {
   font-size: 25px;
 }
 .trophyImg {
   width: 50%;
 }
 @media (min-width: 768px) {
-  .gameOverMode h1 {
+  .gameOverMode h1,
+  p {
     font-size: 35px;
   }
   .gameOverMode {
