@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/REACT-MATCH-GAME-A-2/static/css/main.ff53cb74.chunk.css",
+    "main.js": "/REACT-MATCH-GAME-A-2/static/js/main.59c1e85b.chunk.js",
+    "main.js.map": "/REACT-MATCH-GAME-A-2/static/js/main.59c1e85b.chunk.js.map",
+    "runtime-main.js": "/REACT-MATCH-GAME-A-2/static/js/runtime-main.66910742.js",
+    "runtime-main.js.map": "/REACT-MATCH-GAME-A-2/static/js/runtime-main.66910742.js.map",
+    "static/js/2.cb1b49c6.chunk.js": "/REACT-MATCH-GAME-A-2/static/js/2.cb1b49c6.chunk.js",
+    "static/js/2.cb1b49c6.chunk.js.map": "/REACT-MATCH-GAME-A-2/static/js/2.cb1b49c6.chunk.js.map",
+    "index.html": "/REACT-MATCH-GAME-A-2/index.html",
+    "static/css/main.ff53cb74.chunk.css.map": "/REACT-MATCH-GAME-A-2/static/css/main.ff53cb74.chunk.css.map",
+    "static/js/2.cb1b49c6.chunk.js.LICENSE.txt": "/REACT-MATCH-GAME-A-2/static/js/2.cb1b49c6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.66910742.js",
+    "static/js/2.cb1b49c6.chunk.js",
+    "static/css/main.ff53cb74.chunk.css",
+    "static/js/main.59c1e85b.chunk.js"
+  ]
+}
